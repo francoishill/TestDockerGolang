@@ -11,5 +11,5 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/", handler)
-	http.ListenAndServe(":10003", nil)
+	http.ListenAndServe("0.0.0.0:10003", nil)
 }
